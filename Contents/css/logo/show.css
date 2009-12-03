@@ -1,0 +1,7 @@
+#logo {
+	display: block;	
+}
+
+#pageHeader h1, #pageHeader h2 {
+	display: none;	
+}

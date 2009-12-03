@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <name>eGov vine</name>
+  <styles>
+    <style>
+      <group>Colours</group>
+      <variation>Body Background</variation>
+      <variable>colour_body_background</variable>
+      <color>#ffffff</color>
+    </style>
+    <style>
+      <group>Colours</group>
+      <variation>Header and footer</variation>
+      <variable>colour_header_footer_background</variable>
+      <color>#9c0000</color>
+    </style>
+    <style>
+      <group>Colours</group>
+      <variation>Title and slogan</variation>
+      <variable>colour_title_colour</variable>
+      <color>#ffffff</color>
+    </style>
+    <style>
+      <group>Colours</group>
+      <variation>Headlines</variation>
+      <variable>colour_headline_colour</variable>
+      <color>#8fc520</color>
+    </style>
+    <style>
+      <group>Colours</group>
+      <variation>Text</variation>
+      <variable>colour_text_colour</variable>
+      <color>#303030</color>
+    </style>
+    <style>
+      <group>Colours</group>
+      <variation>Links</variation>
+      <variable>colour_link_colour</variable>
+      <color>#0096ff</color>
+    </style>
+    <style>
+      <group>Sidebar</group>
+      <variation>Right</variation>
+    </style>
+    <style>
+      <group>Logo</group>
+      <variation>Hide</variation>
+    </style>
+    <style>
+      <group>Sub navigation</group>
+      <variation>Show</variation>
+    </style>
+    <style>
+      <group>Plugin sidebar</group>
+      <variation>Show</variation>
+    </style>
+  </styles>
+  <colour-files-original>
+    <colour-file>colourtags_egovvine_original.css</colour-file>
+  </colour-files-original>
+  <colour-files>
+    <colour-file>colourtags_egovvine.css</colour-file>
+  </colour-files>
+  <preview>eGov vine_theme_preview.png</preview>
+  <small-preview>eGov vine_small_theme_preview.png</small-preview>
+  <page-id>70</page-id>
+  <extra-regions>
+    <extra-region extra-region-parent="toolbar">toolbar1</extra-region>
+  </extra-regions>
+  <uri-of-current-built-in-style>-1</uri-of-current-built-in-style>
+</theme>
+

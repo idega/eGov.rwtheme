@@ -1,0 +1,12 @@
+#sidebarContainer {
+	display: none;	
+}
+
+#contentContainer #content {
+	float: none;
+	width: auto;
+}
+
+#contentContainer .wrapper {
+ overflow:visible !important;
+}

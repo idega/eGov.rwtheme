@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode";
+}
+
+img {
+	border: 0;
+}
+
+h1 {
+	margin: 0;
+	font-size: 1.4em;
+}
+
+#pageHeader {
+	display: none;
+}
+
+#navigation {
+	display: none;
+}
+
+#sidebar, #pluginSidebar, #casesFilter {
+	display: none;
+}
+
+.blog-entry-title {
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+.blog-entry-body h2 {
+	font-size: 1em;
+	margin: 0;
+	margin-bottom: 2px;
+}
+
+.blog-entry-body p {
+	margin: 0;
+	margin-bottom: 16px;
+}
+
+#footer {
+	display: none;
+}
+
+#idegaThemeExpandRegion {
+	display: none;
+}
+
+.fbc_button_area, .alert, .xformErrors, .trigger {
+	display: none !important;
+}
+
+ul.legend {
+	display: none;
+}

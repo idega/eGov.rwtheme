@@ -1,0 +1,63 @@
+body, #sidebarContainer .box {
+	background-color: %colour_body_background%;
+}
+
+body {
+	color: %colour_text_colour%;
+}
+
+a {
+	color: %colour_link_colour%;	
+}
+
+#pageHeader, #pageHeader .wrapper, #footer {
+	background-color: %colour_header_footer_background%;	
+}
+
+#pageHeader h1, #pageHeader h2 {
+	color: %colour_title_colour%;	
+}
+
+#navcontainer a {
+	background-color: %colour_header_footer_background + #666666%;
+}
+
+#contentSplitter, #navcontainer a.current {
+	background-color: %colour_header_footer_background + #bbbbbb%;
+}
+
+#sidebarContainer .box, #sidebarContainer .box .content h1 {
+	border-color: %colour_header_footer_background + #bbbbbb%;
+}
+
+#sidebarContainer .box .content {
+	background-color: %colour_header_footer_background + #cecece%;
+}
+
+#sidebarContainer .box .content ul, #sidebarContainer .box .content p {
+	border-color: %colour_body_background%;
+}
+
+#contentSplitter {
+	border-color: %colour_body_background%;
+}
+
+#contentContainer {
+	border-color: %colour_header_footer_background + #bbbbbb%;
+}
+
+#footer p {
+	color: %colour_header_footer_background + #eeeeee%;
+}
+
+h1, .blog-entry-title, .blog-entry-title a {
+	color: %colour_headline_colour%;	
+}
+
+#sidebarContainer .box .content h1 {
+	color: %colour_header_footer_background + #333333%;
+}
+
+.blog-entry-date {
+	color: %colour_text_colour + #666666%;
+}

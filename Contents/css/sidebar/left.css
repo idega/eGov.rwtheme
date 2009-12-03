@@ -1,0 +1,9 @@
+#contentContainer #content {
+	float: right;
+	width: 628px;
+}
+
+#sidebarContainer {
+	float: left;
+	width: 220px;
+}
