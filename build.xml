@@ -22,7 +22,7 @@
   	  
 	  <mkdir dir="target"/>
 	  <zip destfile="target/eGov.rwtheme.zip"
-	       basedir="." includes="Contents/**"
+	       basedir=".." includes="eGov.rwtheme/Contents/**"
 	  />
   </target>
 	
