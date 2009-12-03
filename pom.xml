@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?> <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.idega.theme</groupId>
+  <artifactId>eGov.rwtheme</artifactId>
+  <packaging>pom</packaging>
+  <version>4.1.3</version>
+  <description>A simple RapidWeaver theme for the idega platform</description>
+  <name>eGov.rwtheme</name>
+  <inceptionYear>2009</inceptionYear>
+  <organization>
+    <name>Idega Software</name>
+    <url>http://www.idega.org/</url>
+  </organization>
+  
+  <scm>
+        <connection>scm:git:git://github.com/idega/eGov.rwtheme.git</connection>
+        <url>scm:git:git://github.com/idega/eGov.rwtheme.git</url>
+  </scm>
+  
+
+  <distributionManagement>
+    <repository>
+      <id>idega1</id>
+      <name>idega Maven2 Repository</name>
+      <url>scp://repository.idega.com:/home/idegaweb/repository.idega.com/maven2</url>
+    </repository>
+    <site>
+      <id>idega1</id>
+      <name>idega Maven2 Documentation site</name>
+      <url>scp://repository.idega.com:/var/www/webs/developer.idega.com/platform4/${groupId}/${artifactId}</url>
+    </site>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>idega1</id>
+      <name>idega maven2 repository</name>
+      <url>http://repository.idega.com/maven2/</url>
+      <!--snapshotPolicy>daily</snapshotPolicy-->
+    </repository>
+    <repository>
+      <id>idega2</id>
+      <name>idega public repository</name>
+      <url>http://repository.idega.com/maven/</url>
+      <!--snapshotPolicy>daily</snapshotPolicy-->
+      <layout>legacy</layout>
+    </repository>
+  </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+          <id>idega1</id>
+          <name>idega maven2 repository</name>
+          <url>http://repository.idega.com/maven2/</url>
+          <!--snapshotPolicy>daily</snapshotPolicy-->
+        </pluginRepository>
+    </pluginRepositories>
+
+  <build>
+<plugins>  
+<plugin>
+  <artifactId>maven-antrun-plugin</artifactId>
+  <executions>
+    <execution>
+      <phase>process-resources</phase>
+      <configuration>
+        <tasks>
+          <ant antfile="build.xml" target="build"/>
+        </tasks>
+      </configuration>
+      <goals>
+        <goal>run</goal>
+      </goals>
+    </execution>
+  </executions>
+</plugin>
+<plugin>
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>build-helper-maven-plugin</artifactId>
+  <version>1.3</version>
+  <executions>
+    <execution>
+      <id>add-zip</id>
+      <phase>package</phase>
+      <goals>
+        <goal>attach-artifact</goal>
+      </goals>
+      <configuration>
+        <artifacts>
+          <artifact>
+            <file>${project.build.directory}/eGov.rwtheme.zip</file>
+            <type>zip</type>
+          </artifact>
+        </artifacts>
+      </configuration>
+    </execution>
+  </executions>
+</plugin>
+
+    </plugins>
+  </build>
+</project>

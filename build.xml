@@ -1,0 +1,29 @@
+<!--
+	This program and the accompanying materials are made available
+	under the terms of the Eclipse Public License v1.0 which
+	accompanies this distribution, and is available at
+  	http://www.eclipse.org/legal/epl-v10.html
+	
+	This build script creates a build directory containing the plugins
+	and features to be built, and then kicks off the PDE build process.
+	You could just as easily do this from a shell script or cron job.
+	
+	Also, the script can be run inside the Eclipse IDE by choosing 
+	Run As -> Ant Build from the context menu. It could obviously be
+	run outside of the IDE if you have ANT installed on your path.
+	
+	If you have any questions about this build, feel free to contact me
+	at patrick@rcpquickstart.com.
+-->
+<project name="eGov.rwtheme" default="build">
+
+
+  <target name="build">
+  	  
+	  <mkdir dir="target"/>
+	  <zip destfile="target/eGov.rwtheme.zip"
+	       basedir="." includes="Contents/**"
+	  />
+  </target>
+	
+</project>
